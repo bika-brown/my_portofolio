@@ -25,21 +25,26 @@
   </div>
 
   <!-- Mobile Menu Button -->
-  <button class="lg:hidden">
+  <button id="menu-btn" class="lg:hidden">
       <i class="ri-menu-line text-3xl"></i>
+      <div id="mobile-menu" class="hidden bg-gray-200 opacity-75  h-96 font-bold flex-col ">
+          <a href="#" class="hover:text-gray-500 ">Home</a>
+          <a href="#" class="hover:text-gray-500">Projects</a>
+          <a href="#" class="hover:text-gray-500">Services</a>
+          <a href="#" class="hover:text-gray-500">Resume</a>
+      </div>
   </button>
 
 </nav>
 
 
         <!-- Home -->
-    <section class="flex lg:flex-row justify-between items-center md:flex-col">
-      <div class="flex flex-col mx-10 mt-48 bg-[url('https://www.istockphoto.com/vector/abstract-data-flow-illustration-with-modern-design-and-digital-connectivity-gm2199109663-616939218')]">
-        
-        <h1 class="flex font-bold text-5xl text-gray-800">
+    <section class="flex lg:flex-row justify-between md:flex-col items-center">
+      <div class="flex flex-col mx-10 mt-48">
+        <h1 class="flex font-bold lg:text-5xl md:text-3xl text-gray-800">
           HELLO, I`M 
         </h1>
-        <h1 class="flex font-bold text-5xl mt-5 text-gray-800">
+        <h1 class="flex font-bold text-5xl md:text-3xl mt-5 text-gray-800">
            ABUBAKR ALNOUR
         </h1>
 
@@ -56,11 +61,11 @@
             Resume
           </button>
 
-      </div>
+        </div>
+        <div class="flex mx-10 rounded-xl mt-20">
+          <img class="h-[500px]" src="./src/image/My-porofile.jpg" alt="">
+        </div>
 
-      <div class="flex mx-10 rounded-xl mt-20">
-        <img class="h-[500px]" src="./src/image/My-porofile.jpg" alt="">
-      </div>
     </section>
 
     <!-- Projects -->
@@ -189,6 +194,23 @@
       </button>
     </div>
 </section>
+
+    <!-- footer -->
+<footer class="bg-gray-700 w-full mt-10 border-t border-blue-800">
+    <div class="flex flex-col items-center justify-center py-8 px-4 text-center">
+      <div class="flex space-x-6 text-white text-3xl mb-4">
+        <a href="https://facebook.com" target="_blank" class="hover:text-black transition-colors"><i class="ri-github-fill"></i></i></a>
+        <a href="https://instagram.com" target="_blank" class="hover:text-pink-400 transition-colors"><i class="ri-instagram-fill"></i></a>
+        <a href="https://youtube.com" target="_blank" class="hover:text-red-500 transition-colors"><i class="ri-youtube-fill"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="hover:text-blue-300 transition-colors"><i class="ri-linkedin-fill"></i></a>
+        <a href="https://twitter.com" target="_blank" class="hover:text-sky-400 transition-colors"><i class="ri-twitter-fill"></i></a>
+      </div>
+
+      <div class="text-white text-sm md:text-base">
+        © 2025 <span class="font-semibold text-blue-200">{/ZoolCode/}</span> | Built with <span class="text-sky-300 font-semibold">Tailwind CSS</span>
+      </div>
+    </div>
+  </footer>
 
 
 
